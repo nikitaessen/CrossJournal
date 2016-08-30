@@ -1,0 +1,9 @@
+App.xbf
+Styles\AddNewNotePageViewStyle.xbf
+Styles\DetailsPageViewStyle.xbf
+Styles\EditPageViewStyle.xbf
+Styles\MainPageViewStyle.xbf
+Views\AddNewNotePageView.xbf
+Views\DetailsPageView.xbf
+Views\EditPageView.xbf
+Views\MainPageView.xbf

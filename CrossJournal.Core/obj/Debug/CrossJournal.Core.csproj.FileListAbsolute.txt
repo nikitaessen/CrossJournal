@@ -6,6 +6,5 @@ D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\MvvmCross.Cor
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\MvvmCross.Localization.dll
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\MvvmCross.Platform.dll
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\MvvmCross.Plugins.Messenger.dll
-D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\Windows.Foundation.UniversalApiContract.winmd
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.pdb

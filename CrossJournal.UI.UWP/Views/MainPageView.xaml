@@ -5,8 +5,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:cv="using:CrossJournal.UI.UWP.Converters"
-    xmlns:views="using:MvvmCross.WindowsUWP.Views"
     xmlns:i="using:Windows.UI.Interactivity"
+    xmlns:views="using:MvvmCross.WindowsUWP.Views"
     mc:Ignorable="d">
 
     <views:MvxWindowsPage.Resources>
@@ -53,11 +53,11 @@
         </Grid>
         <Grid Grid.Row="1">
             <ListView ItemsSource="{Binding Path=RecordingsManager.DataList, Mode=OneWay}"
-                          
                           ItemTemplate="{StaticResource ItemTemplate}" Style="{StaticResource ListViewStyle}"
+                          SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
                           ItemContainerStyle="{StaticResource StretchListItem}">
                 <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="ItemClick">
+                    <i:EventTrigger EventName="SelectionChanged">
                         <i:InvokeCommandAction Command="{Binding ItemClickCommand}" />
                     </i:EventTrigger>
                 </i:Interaction.Triggers>

@@ -1,4 +1,5 @@
-﻿using MvvmCross.WindowsUWP.Views;
+﻿using Windows.UI.Xaml.Navigation;
+using MvvmCross.WindowsUWP.Views;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -12,6 +13,16 @@ namespace CrossJournal.UI.UWP.Views
         public MainPageView()
         {
             this.InitializeComponent();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
         }
     }
 }

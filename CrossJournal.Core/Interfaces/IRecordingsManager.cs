@@ -10,7 +10,7 @@ namespace CrossJournal.Core.Interfaces
         ImagePath CurrentImage { get; set; }
         ObservableCollection<Record> DataList { get; set; }
         Task<ObservableCollection<Record>> GetCurrentVersion();
-        Task<ObservableCollection<Record>> Create(string noteContent);
+        Task <ObservableCollection<Record>> Create(string noteContent);
         Task<ObservableCollection<Record>> Delete();
         Task<ObservableCollection<Record>> Editor(string note);
         Record SelectCurrentItem(Record item);

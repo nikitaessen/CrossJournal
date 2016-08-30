@@ -8,8 +8,7 @@ namespace CrossJournal.Core.ViewModels
     public class AddNewNotePageViewModel : BaseViewModel
     {
         private IRecordingsManager _recordingsManager;
-        private IAttachmentManager _attachmentManager;
-
+        
         private string _textBoxContent;
         public string TextBoxContent
         {
@@ -24,23 +23,25 @@ namespace CrossJournal.Core.ViewModels
             }
         }
 
-        public AddNewNotePageViewModel(IRecordingsManager recordingsManager, IAttachmentManager attachmentManager)
+        public AddNewNotePageViewModel(IRecordingsManager recordingsManager)
         {
             _recordingsManager = recordingsManager;
             _recordingsManager.GetCurrentVersion();
         }
 
-        private ICommand _onDoneClick;
-        public ICommand OnDoneClick
+
+        private ICommand _okClickCommand;
+        public ICommand OkClickCommand
         {
             get
             {
-                _onDoneClick = new MvxCommand(() => CreateNote());
-                return _onDoneClick;
+                _okClickCommand = new MvxCommand(() => OnDoneClick());
+                return _okClickCommand;
             }
         }
 
-        public void CreateNote()
+
+        public void OnDoneClick()
         {
             _recordingsManager.Create(TextBoxContent);
             Messenger.Publish(new CollectionChangedMessage(this));

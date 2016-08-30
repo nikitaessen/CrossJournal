@@ -1,4 +1,4 @@
-﻿using CrossJournal.Core.Interfaces;
+using CrossJournal.Core.Interfaces;
 using CrossJournal.Core.Models;
 using System;
 using System.Collections.ObjectModel;
@@ -127,10 +127,10 @@ namespace CrossJournal.Core.Managers
 
         public async Task<ObservableCollection<Record>> AddImage()
         {
-            var buff = await _attachmentManager.AttachImage();
-            if (buff != null)
+            var image = await _attachmentManager.AttachImage();
+            if (image != null)
             {
-                CurrentItem.ImagesPath.Add(buff);
+                CurrentItem.ImagesPath.Add(image);
                 await _localStorageManager.Save(DataList);
             }
             return DataList;
@@ -138,10 +138,10 @@ namespace CrossJournal.Core.Managers
 
         public async Task<ObservableCollection<Record>> AddPhoto()
         {
-            var buff = await _attachmentManager.AttachPhoto();
-            if (buff != null)
+            var image = await _attachmentManager.AttachPhoto();
+            if (image != null)
             {
-                CurrentItem.ImagesPath.Add(buff);
+                CurrentItem.ImagesPath.Add(image);
                 await _localStorageManager.Save(DataList);
             }
             return DataList;

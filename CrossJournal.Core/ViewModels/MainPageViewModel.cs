@@ -4,7 +4,6 @@ using CrossJournal.Core.Models;
 using MvvmCross.Plugins.Messenger;
 using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
-using Windows.UI.Xaml.Controls;
 
 namespace CrossJournal.Core.ViewModels
 {
@@ -20,9 +19,21 @@ namespace CrossJournal.Core.ViewModels
             }
             set
             {
-                SetProperty(ref _recordingsManager, value);
-                //_recordingsManager = value;
-                //RaisePropertyChanged(()=>RecordingsManager);
+                _recordingsManager = value;
+                RaisePropertyChanged(()=>RecordingsManager);
+            }
+        }
+
+        private Record _selectedItem;
+        public Record SelectedItem
+        {
+            get
+            {
+                return _selectedItem;
+            }
+            set
+            {
+                _selectedItem = value;
             }
         }
 
@@ -50,12 +61,6 @@ namespace CrossJournal.Core.ViewModels
                    Messenger.SubscribeOnMainThread<CollectionChangedMessage>(msg => UpdateProperty());
         }
 
-        public void UpdateProperty()
-        {
-            LocalCollection = RecordingsManager.DataList;
-            RaisePropertyChanged(nameof(LocalCollection));
-        }
-
         private ICommand _addClickCommand;
         public ICommand AddClickCommand
         {
@@ -66,26 +71,31 @@ namespace CrossJournal.Core.ViewModels
             }
         }
 
-        private void OnItemClicked(ItemClickEventArgs args)
-        {
-            var item = args.ClickedItem as Record;
-            RecordingsManager.SelectCurrentItem(item);
-            ShowViewModel<DetailsPageViewModel>();
-        }
-
         private ICommand _itemClickCommand;
         public ICommand ItemClickCommand
         {
             get
             {
-                _itemClickCommand = new MvxCommand<ItemClickEventArgs>((arg) => OnItemClicked(arg));
+                _itemClickCommand = new MvxCommand(() => OnItemClicked());
                 return _itemClickCommand;
             }
         }
 
+        public void UpdateProperty()
+        {
+            LocalCollection = RecordingsManager.DataList;
+            RaisePropertyChanged(nameof(LocalCollection));
+        }
+
+        private void OnItemClicked()
+        {
+            RecordingsManager.SelectCurrentItem(SelectedItem);
+            ShowViewModel<DetailsPageViewModel>();
+        }
+
         public void GoToDetails(Record item)
         {
-            RecordingsManager.SelectCurrentItem(item);
+            RecordingsManager.SelectCurrentItem(SelectedItem);
             ShowViewModel<DetailsPageViewModel>();
         }
     }

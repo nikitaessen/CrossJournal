@@ -28,6 +28,7 @@
             <TextBlock Text="Editor" Style="{StaticResource Header}"/>
             <CommandBar Grid.Column="1" Style="{StaticResource BarStyle}">
                 <AppBarButton x:Name="DoneClick" Icon="Accept" Label="Done"
+                              Command="{Binding DoneCommand}"
                               Style="{StaticResource BarBtnStyle}"/>
             </CommandBar>
         </Grid>

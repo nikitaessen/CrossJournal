@@ -1,10 +1,9 @@
 ﻿using CrossJournal.Core.Interfaces;
 using CrossJournal.Core.Models;
 using System.Collections.ObjectModel;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.Plugins.Messenger;
 using System.Windows.Input;
-using MvvmCross.Core.ViewModels;
-using Windows.UI.Xaml.Controls;
 
 namespace CrossJournal.Core.ViewModels
 {
@@ -71,13 +70,13 @@ namespace CrossJournal.Core.ViewModels
             }
         }
 
-        private ICommand _deleteCommand;
-        public ICommand DeleteCommand
+        private ICommand _deleteClickCommand;
+        public ICommand DeleteClickCommand
         {
             get
             {
-                _deleteCommand = new MvxCommand(() => DeleteClick());
-                return _deleteCommand;
+                _deleteClickCommand = new MvxCommand(() => DeleteClick());
+                return _deleteClickCommand;
             }
         }
 
@@ -96,7 +95,7 @@ namespace CrossJournal.Core.ViewModels
         {
             get
             {
-                _editCommand = new MvxCommand(() => EditClick());
+                _editCommand = new MvxCommand(() => ShowViewModel<EditPageViewModel>());
                 return _editCommand;
             }
         }
@@ -106,7 +105,7 @@ namespace CrossJournal.Core.ViewModels
         {
             get
             {
-                _attachImageCommand = new MvxCommand(() => AttachClick());
+                _attachImageCommand = new MvxCommand(() => AttachImage());
                 return _attachImageCommand;
             }
         }
@@ -116,18 +115,8 @@ namespace CrossJournal.Core.ViewModels
         {
             get
             {
-                _attachPhotoCommand = new MvxCommand(() => CameraClick());
+                _attachPhotoCommand = new MvxCommand(() => AttachPhoto());
                 return _attachPhotoCommand;
-            }
-        }
-
-        private ICommand _imageClickCommand;
-        public ICommand ImageClickCommand
-        {
-            get
-            {
-                _imageClickCommand = new MvxCommand<ItemClickEventArgs>((i) => ImageClick(i));
-                return _imageClickCommand;
             }
         }
 
@@ -148,39 +137,24 @@ namespace CrossJournal.Core.ViewModels
 
         public void DeleteImage(object args)
         {
-            var buff = args as ImagePath;
-            _recordingsManager.SelectCurrentImage(buff);
+            _recordingsManager.SelectCurrentImage(args as ImagePath);
             _recordingsManager.DeleteImage();
         }
 
-        public void EditClick()
+        public void DeleteImageClick(ImagePath path)
         {
-            ShowViewModel<EditPageViewModel>();
+            _recordingsManager.SelectCurrentImage(path);
+            _recordingsManager.DeleteImage();
         }
 
-        //public void DeleteImageClick(ImagePath path)
-        //{
-        //    _recordingsManager.SelectCurrentImage(path);
-        //    _recordingsManager.DeleteImage();
-        //}
-
-        public void AttachClick()
+        public void AttachImage()
         {
             _recordingsManager.AddImage();
-            _imagePath = _recordingsManager.CurrentItem.ImagesPath;
-            RaisePropertyChanged(nameof(ImagePath));
         }
 
-        public async void CameraClick()
+        public void AttachPhoto()
         {
-            await _recordingsManager.AddPhoto();
-            _imagePath = _recordingsManager.CurrentItem.ImagesPath;
-            RaisePropertyChanged(nameof(ImagePath));
-        }
-
-        public async void ImageClick(ItemClickEventArgs args)
-        {
-            _recordingsManager.SelectCurrentImage(args.ClickedItem as ImagePath);
+            _recordingsManager.AddPhoto();
         }
     }
 }

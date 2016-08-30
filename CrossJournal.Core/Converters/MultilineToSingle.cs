@@ -21,7 +21,7 @@ namespace CrossJournal.Core.Converters
                 var buff = (inputText.Split('\n'))[0];
                 _outputText = (inputText.Split('\n'))[1];
 
-                return String.Format(TextFormat, buff, _outputText);
+                return String.Format(TextFormat,buff,_outputText);
             }
             return value;
         }

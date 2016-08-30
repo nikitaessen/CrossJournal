@@ -28,7 +28,7 @@
             <TextBlock Text="New Note" Style="{StaticResource Header}"/>
             <CommandBar Grid.Column="1" Style="{StaticResource BarStyle}">
                 <AppBarButton x:Name="OnDoneClick" Icon="Accept" Label="Done"
-                              Command="{Binding OnDoneClick}"
+                              Command="{Binding OkClickCommand}"
                               Style="{StaticResource BarBtnStyle}"/>
             </CommandBar>
         </Grid>

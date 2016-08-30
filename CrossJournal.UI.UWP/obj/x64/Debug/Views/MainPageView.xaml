@@ -1,0 +1,68 @@
+﻿<views:MvxWindowsPage
+    x:Class="CrossJournal.UI.UWP.Views.MainPageView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cv="using:CrossJournal.UI.UWP.Converters"
+    xmlns:i="using:Windows.UI.Interactivity"
+    xmlns:views="using:MvvmCross.WindowsUWP.Views"
+    mc:Ignorable="d">
+
+    <views:MvxWindowsPage.Resources>
+        <ResourceDictionary>
+            <cv:MultilineToSingleUWP x:Key="MultiToSingle"/>
+            <cv:TimeSpanToHumanStringUWP x:Key="HumanTime"/>
+            <DataTemplate x:Key="ItemTemplate">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding Path=Note, Converter={StaticResource MultiToSingle}}" 
+                               Grid.Column="0" Style="{StaticResource NoteBlockStyle}"/>
+                    <TextBlock Text="{Binding Path=Date, Converter={StaticResource HumanTime}}" 
+                               Grid.Column="1" Style="{StaticResource DateStyle}"/>
+                </Grid>
+            </DataTemplate>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/MainPageViewStyle"/>
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </views:MvxWindowsPage.Resources>
+
+    <Grid Style="{StaticResource MainGrid}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Style="{StaticResource HeaderBg}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="All Notes" Style="{StaticResource Header}"/>
+            <CommandBar Grid.Column="1" Style="{StaticResource BarStyle}">
+                <AppBarButton x:ConnectionId='1' x:Name="AddClick" Icon="Add" Label="Add Note" 
+                              Command="{Binding AddClickCommand}"
+                              Style="{StaticResource BarBtnStyle}"/>
+            </CommandBar>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ListView ItemsSource="{Binding Path=RecordingsManager.DataList, Mode=OneWay}"
+                          ItemTemplate="{StaticResource ItemTemplate}" Style="{StaticResource ListViewStyle}"
+                          SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                          ItemContainerStyle="{StaticResource StretchListItem}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectionChanged">
+                        <i:InvokeCommandAction Command="{Binding ItemClickCommand}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ListView>
+        </Grid>
+    </Grid>
+</views:MvxWindowsPage>
+

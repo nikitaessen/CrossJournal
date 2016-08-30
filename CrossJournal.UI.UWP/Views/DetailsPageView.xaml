@@ -6,17 +6,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:cv="using:CrossJournal.Core.Converters"
     xmlns:views="using:MvvmCross.WindowsUWP.Views"
-    xmlns:i="using:Windows.UI.Interactivity"
     mc:Ignorable="d">
 
     <views:MvxWindowsPage.Resources>
         <ResourceDictionary>
-            <cv:StringToUriConverter x:Key="ToUri"/>
             <DataTemplate x:Key="ItemTemplate">
                 <Grid Width="200">
                     <Image Source="{Binding FullPath}"/>
                     <Button x:Name="Delete" Style="{StaticResource DeleteImageStyle}"
-                            Command="{Binding Path=DataContext.DeleteImageCommand, ElementName=MainGrid}"
+                            Command="{Binding Path=DataContext.DeleteImageCommand,ElementName=MainGrid}"
                             CommandParameter="{Binding}">
                         <SymbolIcon Symbol="Cancel" IsTapEnabled="True"/>
                     </Button>
@@ -42,9 +40,9 @@
         <Grid Style="{StaticResource CommandBarBg}" x:Name="CommandBarWrapper">
             <CommandBar Grid.Column="1" Style="{StaticResource BarStyle}">
                 <AppBarButton x:Name="DeleteClick" Icon="Delete" Label="Delete" 
-                              Command="{Binding DeleteCommand}"
+                              Command="{Binding DeleteClickCommand}"
                               Style="{StaticResource BarBtnStyle}"/>
-                <AppBarButton x:Name="EditClick" Icon="Edit" Label="Edit" 
+                <AppBarButton x:Name="EditClick" Icon="Edit" Label="Edit"
                               Command="{Binding EditCommand}"
                               Style="{StaticResource BarBtnStyle}"/>
                 <AppBarButton x:Name="AttachClick" Icon="Attach" Label="Attach Image" 
@@ -75,13 +73,7 @@
 
                     <ListView Grid.Column="1" ItemsSource="{Binding ImagePath, Mode=OneWay}"
                               ItemTemplate="{StaticResource ItemTemplate}"
-                              Style="{StaticResource SideImages}">
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="ItemClick">
-                                <i:InvokeCommandAction Command="{Binding ImageClickCommand}" />
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </ListView>
+                              Style="{StaticResource SideImages}"/>
                 </Grid>
             </ScrollViewer>
             <TextBlock Text="{Binding Date}" Grid.Row="1" Style="{StaticResource DateStyle}"/>

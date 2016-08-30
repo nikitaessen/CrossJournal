@@ -96,7 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\MultilineToSingleUWP.cs" />
-    <Compile Include="Converters\TimeSpanToHumanString.cs" />
+    <Compile Include="Converters\TimeSpanToHumanStringUWP.cs" />
     <Compile Include="Managers\AttachmentManager.cs" />
     <Compile Include="Managers\LocalStorageManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

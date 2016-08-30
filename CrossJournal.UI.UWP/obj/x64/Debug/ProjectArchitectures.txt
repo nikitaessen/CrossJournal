@@ -1,0 +1,2 @@
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\CrossJournal.Core.csproj;neutral
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.UI.UWP\CrossJournal.UI.UWP.csproj;x64

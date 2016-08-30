@@ -1,5 +1,7 @@
 ﻿using CrossJournal.Core.Interfaces;
 using CrossJournal.Core.Models;
+using MvvmCross.Core.ViewModels;
+using System.Windows.Input;
 
 namespace CrossJournal.Core.ViewModels
 {
@@ -27,6 +29,16 @@ namespace CrossJournal.Core.ViewModels
             _recordingsManager = recordingsManager;
 
             _textBoxContent = _recordingsManager.CurrentItem.Note;
+        }
+
+        private ICommand _doneCommand;
+        public ICommand DoneCommand
+        {
+            get
+            {
+                _doneCommand = new MvxCommand(() => OnDoneClick());
+                return _doneCommand;
+            }
         }
 
         public void OnDoneClick()
