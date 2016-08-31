@@ -8,3 +8,7 @@ D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\MvvmCross.Pla
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\MvvmCross.Plugins.Messenger.dll
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.pdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb

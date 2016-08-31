@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="CrossJournal.UI.Droid.CrossJournal.UI.Droid" android:versionCode="1" android:versionName="1.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="CrossJournal.UI.Droid" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="New Note" android:name="md5e004c8df5d66b987fab84af2109bfa36.AddNewNotePageView" />
+    <activity android:label="Details" android:name="md5e004c8df5d66b987fab84af2109bfa36.DetailsPageView" />
+    <activity android:label="Edit" android:name="md5e004c8df5d66b987fab84af2109bfa36.EditPageView" />
+    <activity android:label="All Notes" android:name="md5e004c8df5d66b987fab84af2109bfa36.MainPageView" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="CrossJournal.UI.Droid.CrossJournal.UI.Droid.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.CrossJournal.UI.Droid.CrossJournal.UI.Droid" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

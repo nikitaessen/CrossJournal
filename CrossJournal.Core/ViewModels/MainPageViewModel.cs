@@ -92,11 +92,5 @@ namespace CrossJournal.Core.ViewModels
             RecordingsManager.SelectCurrentItem(SelectedItem);
             ShowViewModel<DetailsPageViewModel>();
         }
-
-        public void GoToDetails(Record item)
-        {
-            RecordingsManager.SelectCurrentItem(SelectedItem);
-            ShowViewModel<DetailsPageViewModel>();
-        }
     }
 }
