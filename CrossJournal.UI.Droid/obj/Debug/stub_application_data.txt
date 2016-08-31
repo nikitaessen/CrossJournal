@@ -1,0 +1,2 @@
+android.app.Application
+CrossJournal.UI.Droid.CrossJournal.UI.Droid

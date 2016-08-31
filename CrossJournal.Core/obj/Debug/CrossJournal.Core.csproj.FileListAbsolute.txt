@@ -12,3 +12,15 @@ D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll.mdb
 D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\obj\Debug\CrossJournal.Core.dll.mdb
+D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll.mdb

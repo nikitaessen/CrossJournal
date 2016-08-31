@@ -18,7 +18,8 @@ namespace CrossJournal.UI.Droid.Views
     [Activity(Label = "Details")]
     public class DetailsPageView : MvxActivity
     {
-        private IAttachmentManager AttachManager { get; set; }
+        private IRecordingsManager _recordingsManager { get; set; }
+        Random IdGenerator = new Random();
 
         private void ChooseImageToAttach()
         {
@@ -63,9 +64,8 @@ namespace CrossJournal.UI.Droid.Views
 
             if (resultCode == Result.Ok)
             {
-                //var path = new ImagePath() { FullPath = data.Data.Path, Id = AttachManager.IdGenerator.Next() };
-                //AttachManager.ImagesPath.Add(path);
-
+                var path = new ImagePath() { FullPath = data.Data.Path, Id = IdGenerator.Next() };
+                _recordingsManager.CurrentItem.ImagesPath.Add(path);
             }
         }
     }
