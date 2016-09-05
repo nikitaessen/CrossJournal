@@ -24,6 +24,11 @@ namespace CrossJournal.Core.ViewModels
             Messenger = messenger;
         }
 
+        //public void Back(MvxViewModel viewModel)
+        //{
+        //    Close(viewModel);
+        //}
+
         protected BaseViewModel() { }
     }
 }

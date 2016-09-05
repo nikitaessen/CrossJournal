@@ -132,7 +132,7 @@ namespace CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[41];
+            _typeNameTable = new string[47];
             _typeNameTable[0] = "MvvmCross.WindowsUWP.Views.MvxWindowsPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -140,42 +140,48 @@ namespace CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo
             _typeNameTable[4] = "MvvmCross.Core.ViewModels.IMvxViewModel";
             _typeNameTable[5] = "CrossJournal.UI.UWP.Views.AddNewNotePageView";
             _typeNameTable[6] = "CrossJournal.UI.UWP.Views.DetailsPageView";
-            _typeNameTable[7] = "CrossJournal.UI.UWP.Views.EditPageView";
-            _typeNameTable[8] = "CrossJournal.UI.UWP.Converters.MultilineToSingleUWP";
-            _typeNameTable[9] = "MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.MultilineToSingle>";
-            _typeNameTable[10] = "MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter";
-            _typeNameTable[11] = "Object";
-            _typeNameTable[12] = "CrossJournal.UI.UWP.Converters.TimeSpanToHumanStringUWP";
-            _typeNameTable[13] = "MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>";
-            _typeNameTable[14] = "Windows.UI.Interactivity.Interaction";
-            _typeNameTable[15] = "Windows.UI.Interactivity.TriggerCollection";
-            _typeNameTable[16] = "Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.TriggerBase>";
-            _typeNameTable[17] = "Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerBase>";
-            _typeNameTable[18] = "Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerBase>";
-            _typeNameTable[19] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[20] = "Windows.UI.Interactivity.TriggerBase";
-            _typeNameTable[21] = "Windows.UI.Interactivity.InteractivityBase";
-            _typeNameTable[22] = "Windows.UI.Interactivity.TriggerActionCollection";
-            _typeNameTable[23] = "Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerAction>";
-            _typeNameTable[24] = "Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerAction>";
-            _typeNameTable[25] = "Windows.UI.Interactivity.TriggerAction";
-            _typeNameTable[26] = "Boolean";
-            _typeNameTable[27] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[28] = "Windows.UI.Interactivity.BehaviorCollection";
-            _typeNameTable[29] = "Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.Behavior>";
-            _typeNameTable[30] = "Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.Behavior>";
-            _typeNameTable[31] = "Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.Behavior>";
-            _typeNameTable[32] = "Windows.UI.Interactivity.Behavior";
-            _typeNameTable[33] = "Windows.UI.Interactivity.EventTrigger";
-            _typeNameTable[34] = "Windows.UI.Interactivity.EventTriggerBase`1<Object>";
-            _typeNameTable[35] = "Windows.UI.Interactivity.EventTriggerBase";
-            _typeNameTable[36] = "String";
-            _typeNameTable[37] = "Windows.UI.Interactivity.InvokeCommandAction";
-            _typeNameTable[38] = "Windows.UI.Interactivity.TriggerAction`1<Windows.UI.Xaml.FrameworkElement>";
-            _typeNameTable[39] = "System.Windows.Input.ICommand";
-            _typeNameTable[40] = "CrossJournal.UI.UWP.Views.MainPageView";
+            _typeNameTable[7] = "CrossJournal.Core.ViewModels.DetailsPageViewModel";
+            _typeNameTable[8] = "CrossJournal.Core.ViewModels.BaseViewModel";
+            _typeNameTable[9] = "MvvmCross.Core.ViewModels.MvxViewModel";
+            _typeNameTable[10] = "MvvmCross.Core.ViewModels.MvxNavigatingObject";
+            _typeNameTable[11] = "MvvmCross.Core.ViewModels.MvxNotifyPropertyChanged";
+            _typeNameTable[12] = "MvvmCross.Platform.Core.MvxMainThreadDispatchingObject";
+            _typeNameTable[13] = "Object";
+            _typeNameTable[14] = "CrossJournal.UI.UWP.Views.EditPageView";
+            _typeNameTable[15] = "CrossJournal.UI.UWP.Converters.MultilineToSingleUWP";
+            _typeNameTable[16] = "MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.MultilineToSingle>";
+            _typeNameTable[17] = "MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter";
+            _typeNameTable[18] = "CrossJournal.UI.UWP.Converters.TimeSpanToHumanStringUWP";
+            _typeNameTable[19] = "MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>";
+            _typeNameTable[20] = "Windows.UI.Interactivity.Interaction";
+            _typeNameTable[21] = "Windows.UI.Interactivity.TriggerCollection";
+            _typeNameTable[22] = "Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.TriggerBase>";
+            _typeNameTable[23] = "Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerBase>";
+            _typeNameTable[24] = "Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerBase>";
+            _typeNameTable[25] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[26] = "Windows.UI.Interactivity.TriggerBase";
+            _typeNameTable[27] = "Windows.UI.Interactivity.InteractivityBase";
+            _typeNameTable[28] = "Windows.UI.Interactivity.TriggerActionCollection";
+            _typeNameTable[29] = "Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerAction>";
+            _typeNameTable[30] = "Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerAction>";
+            _typeNameTable[31] = "Windows.UI.Interactivity.TriggerAction";
+            _typeNameTable[32] = "Boolean";
+            _typeNameTable[33] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[34] = "Windows.UI.Interactivity.BehaviorCollection";
+            _typeNameTable[35] = "Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.Behavior>";
+            _typeNameTable[36] = "Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.Behavior>";
+            _typeNameTable[37] = "Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.Behavior>";
+            _typeNameTable[38] = "Windows.UI.Interactivity.Behavior";
+            _typeNameTable[39] = "Windows.UI.Interactivity.EventTrigger";
+            _typeNameTable[40] = "Windows.UI.Interactivity.EventTriggerBase`1<Object>";
+            _typeNameTable[41] = "Windows.UI.Interactivity.EventTriggerBase";
+            _typeNameTable[42] = "String";
+            _typeNameTable[43] = "Windows.UI.Interactivity.InvokeCommandAction";
+            _typeNameTable[44] = "Windows.UI.Interactivity.TriggerAction`1<Windows.UI.Xaml.FrameworkElement>";
+            _typeNameTable[45] = "System.Windows.Input.ICommand";
+            _typeNameTable[46] = "CrossJournal.UI.UWP.Views.MainPageView";
 
-            _typeTable = new global::System.Type[41];
+            _typeTable = new global::System.Type[47];
             _typeTable[0] = typeof(global::MvvmCross.WindowsUWP.Views.MvxWindowsPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -183,40 +189,46 @@ namespace CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo
             _typeTable[4] = typeof(global::MvvmCross.Core.ViewModels.IMvxViewModel);
             _typeTable[5] = typeof(global::CrossJournal.UI.UWP.Views.AddNewNotePageView);
             _typeTable[6] = typeof(global::CrossJournal.UI.UWP.Views.DetailsPageView);
-            _typeTable[7] = typeof(global::CrossJournal.UI.UWP.Views.EditPageView);
-            _typeTable[8] = typeof(global::CrossJournal.UI.UWP.Converters.MultilineToSingleUWP);
-            _typeTable[9] = typeof(global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter<global::CrossJournal.Core.Converters.MultilineToSingle>);
-            _typeTable[10] = typeof(global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter);
-            _typeTable[11] = typeof(global::System.Object);
-            _typeTable[12] = typeof(global::CrossJournal.UI.UWP.Converters.TimeSpanToHumanStringUWP);
-            _typeTable[13] = typeof(global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter<global::CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>);
-            _typeTable[14] = typeof(global::Windows.UI.Interactivity.Interaction);
-            _typeTable[15] = typeof(global::Windows.UI.Interactivity.TriggerCollection);
-            _typeTable[16] = typeof(global::Windows.UI.Interactivity.LoadableAttachableCollection<global::Windows.UI.Interactivity.TriggerBase>);
-            _typeTable[17] = typeof(global::Windows.UI.Interactivity.AttachableCollection<global::Windows.UI.Interactivity.TriggerBase>);
-            _typeTable[18] = typeof(global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.TriggerBase>);
-            _typeTable[19] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[20] = typeof(global::Windows.UI.Interactivity.TriggerBase);
-            _typeTable[21] = typeof(global::Windows.UI.Interactivity.InteractivityBase);
-            _typeTable[22] = typeof(global::Windows.UI.Interactivity.TriggerActionCollection);
-            _typeTable[23] = typeof(global::Windows.UI.Interactivity.AttachableCollection<global::Windows.UI.Interactivity.TriggerAction>);
-            _typeTable[24] = typeof(global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.TriggerAction>);
-            _typeTable[25] = typeof(global::Windows.UI.Interactivity.TriggerAction);
-            _typeTable[26] = typeof(global::System.Boolean);
-            _typeTable[27] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[28] = typeof(global::Windows.UI.Interactivity.BehaviorCollection);
-            _typeTable[29] = typeof(global::Windows.UI.Interactivity.LoadableAttachableCollection<global::Windows.UI.Interactivity.Behavior>);
-            _typeTable[30] = typeof(global::Windows.UI.Interactivity.AttachableCollection<global::Windows.UI.Interactivity.Behavior>);
-            _typeTable[31] = typeof(global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.Behavior>);
-            _typeTable[32] = typeof(global::Windows.UI.Interactivity.Behavior);
-            _typeTable[33] = typeof(global::Windows.UI.Interactivity.EventTrigger);
-            _typeTable[34] = typeof(global::Windows.UI.Interactivity.EventTriggerBase<global::System.Object>);
-            _typeTable[35] = typeof(global::Windows.UI.Interactivity.EventTriggerBase);
-            _typeTable[36] = typeof(global::System.String);
-            _typeTable[37] = typeof(global::Windows.UI.Interactivity.InvokeCommandAction);
-            _typeTable[38] = typeof(global::Windows.UI.Interactivity.TriggerAction<global::Windows.UI.Xaml.FrameworkElement>);
-            _typeTable[39] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[40] = typeof(global::CrossJournal.UI.UWP.Views.MainPageView);
+            _typeTable[7] = typeof(global::CrossJournal.Core.ViewModels.DetailsPageViewModel);
+            _typeTable[8] = typeof(global::CrossJournal.Core.ViewModels.BaseViewModel);
+            _typeTable[9] = typeof(global::MvvmCross.Core.ViewModels.MvxViewModel);
+            _typeTable[10] = typeof(global::MvvmCross.Core.ViewModels.MvxNavigatingObject);
+            _typeTable[11] = typeof(global::MvvmCross.Core.ViewModels.MvxNotifyPropertyChanged);
+            _typeTable[12] = typeof(global::MvvmCross.Platform.Core.MvxMainThreadDispatchingObject);
+            _typeTable[13] = typeof(global::System.Object);
+            _typeTable[14] = typeof(global::CrossJournal.UI.UWP.Views.EditPageView);
+            _typeTable[15] = typeof(global::CrossJournal.UI.UWP.Converters.MultilineToSingleUWP);
+            _typeTable[16] = typeof(global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter<global::CrossJournal.Core.Converters.MultilineToSingle>);
+            _typeTable[17] = typeof(global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter);
+            _typeTable[18] = typeof(global::CrossJournal.UI.UWP.Converters.TimeSpanToHumanStringUWP);
+            _typeTable[19] = typeof(global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter<global::CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>);
+            _typeTable[20] = typeof(global::Windows.UI.Interactivity.Interaction);
+            _typeTable[21] = typeof(global::Windows.UI.Interactivity.TriggerCollection);
+            _typeTable[22] = typeof(global::Windows.UI.Interactivity.LoadableAttachableCollection<global::Windows.UI.Interactivity.TriggerBase>);
+            _typeTable[23] = typeof(global::Windows.UI.Interactivity.AttachableCollection<global::Windows.UI.Interactivity.TriggerBase>);
+            _typeTable[24] = typeof(global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.TriggerBase>);
+            _typeTable[25] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[26] = typeof(global::Windows.UI.Interactivity.TriggerBase);
+            _typeTable[27] = typeof(global::Windows.UI.Interactivity.InteractivityBase);
+            _typeTable[28] = typeof(global::Windows.UI.Interactivity.TriggerActionCollection);
+            _typeTable[29] = typeof(global::Windows.UI.Interactivity.AttachableCollection<global::Windows.UI.Interactivity.TriggerAction>);
+            _typeTable[30] = typeof(global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.TriggerAction>);
+            _typeTable[31] = typeof(global::Windows.UI.Interactivity.TriggerAction);
+            _typeTable[32] = typeof(global::System.Boolean);
+            _typeTable[33] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[34] = typeof(global::Windows.UI.Interactivity.BehaviorCollection);
+            _typeTable[35] = typeof(global::Windows.UI.Interactivity.LoadableAttachableCollection<global::Windows.UI.Interactivity.Behavior>);
+            _typeTable[36] = typeof(global::Windows.UI.Interactivity.AttachableCollection<global::Windows.UI.Interactivity.Behavior>);
+            _typeTable[37] = typeof(global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.Behavior>);
+            _typeTable[38] = typeof(global::Windows.UI.Interactivity.Behavior);
+            _typeTable[39] = typeof(global::Windows.UI.Interactivity.EventTrigger);
+            _typeTable[40] = typeof(global::Windows.UI.Interactivity.EventTriggerBase<global::System.Object>);
+            _typeTable[41] = typeof(global::Windows.UI.Interactivity.EventTriggerBase);
+            _typeTable[42] = typeof(global::System.String);
+            _typeTable[43] = typeof(global::Windows.UI.Interactivity.InvokeCommandAction);
+            _typeTable[44] = typeof(global::Windows.UI.Interactivity.TriggerAction<global::Windows.UI.Xaml.FrameworkElement>);
+            _typeTable[45] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[46] = typeof(global::CrossJournal.UI.UWP.Views.MainPageView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -254,78 +266,78 @@ namespace CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo
         private object Activate_0_MvxWindowsPage() { return new global::MvvmCross.WindowsUWP.Views.MvxWindowsPage(); }
         private object Activate_5_AddNewNotePageView() { return new global::CrossJournal.UI.UWP.Views.AddNewNotePageView(); }
         private object Activate_6_DetailsPageView() { return new global::CrossJournal.UI.UWP.Views.DetailsPageView(); }
-        private object Activate_7_EditPageView() { return new global::CrossJournal.UI.UWP.Views.EditPageView(); }
-        private object Activate_8_MultilineToSingleUWP() { return new global::CrossJournal.UI.UWP.Converters.MultilineToSingleUWP(); }
-        private object Activate_9_MvxNativeValueConverter() { return new global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter<global::CrossJournal.Core.Converters.MultilineToSingle>(); }
-        private object Activate_12_TimeSpanToHumanStringUWP() { return new global::CrossJournal.UI.UWP.Converters.TimeSpanToHumanStringUWP(); }
-        private object Activate_13_MvxNativeValueConverter() { return new global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter<global::CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>(); }
-        private object Activate_18_FrameworkElementCollection() { return new global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.TriggerBase>(); }
-        private object Activate_24_FrameworkElementCollection() { return new global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.TriggerAction>(); }
-        private object Activate_31_FrameworkElementCollection() { return new global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.Behavior>(); }
-        private object Activate_33_EventTrigger() { return new global::Windows.UI.Interactivity.EventTrigger(); }
-        private object Activate_37_InvokeCommandAction() { return new global::Windows.UI.Interactivity.InvokeCommandAction(); }
-        private object Activate_40_MainPageView() { return new global::CrossJournal.UI.UWP.Views.MainPageView(); }
-        private void VectorAdd_15_TriggerCollection(object instance, object item)
+        private object Activate_14_EditPageView() { return new global::CrossJournal.UI.UWP.Views.EditPageView(); }
+        private object Activate_15_MultilineToSingleUWP() { return new global::CrossJournal.UI.UWP.Converters.MultilineToSingleUWP(); }
+        private object Activate_16_MvxNativeValueConverter() { return new global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter<global::CrossJournal.Core.Converters.MultilineToSingle>(); }
+        private object Activate_18_TimeSpanToHumanStringUWP() { return new global::CrossJournal.UI.UWP.Converters.TimeSpanToHumanStringUWP(); }
+        private object Activate_19_MvxNativeValueConverter() { return new global::MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter<global::CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>(); }
+        private object Activate_24_FrameworkElementCollection() { return new global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.TriggerBase>(); }
+        private object Activate_30_FrameworkElementCollection() { return new global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.TriggerAction>(); }
+        private object Activate_37_FrameworkElementCollection() { return new global::Windows.UI.Interactivity.FrameworkElementCollection<global::Windows.UI.Interactivity.Behavior>(); }
+        private object Activate_39_EventTrigger() { return new global::Windows.UI.Interactivity.EventTrigger(); }
+        private object Activate_43_InvokeCommandAction() { return new global::Windows.UI.Interactivity.InvokeCommandAction(); }
+        private object Activate_46_MainPageView() { return new global::CrossJournal.UI.UWP.Views.MainPageView(); }
+        private void VectorAdd_21_TriggerCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerBase>)instance;
             var newItem = (global::Windows.UI.Interactivity.TriggerBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_16_LoadableAttachableCollection(object instance, object item)
+        private void VectorAdd_22_LoadableAttachableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerBase>)instance;
             var newItem = (global::Windows.UI.Interactivity.TriggerBase)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_17_AttachableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerBase>)instance;
-            var newItem = (global::Windows.UI.Interactivity.TriggerBase)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_18_FrameworkElementCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerBase>)instance;
-            var newItem = (global::Windows.UI.Interactivity.TriggerBase)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_22_TriggerActionCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerAction>)instance;
-            var newItem = (global::Windows.UI.Interactivity.TriggerAction)item;
             collection.Add(newItem);
         }
         private void VectorAdd_23_AttachableCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerAction>)instance;
-            var newItem = (global::Windows.UI.Interactivity.TriggerAction)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerBase>)instance;
+            var newItem = (global::Windows.UI.Interactivity.TriggerBase)item;
             collection.Add(newItem);
         }
         private void VectorAdd_24_FrameworkElementCollection(object instance, object item)
         {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerBase>)instance;
+            var newItem = (global::Windows.UI.Interactivity.TriggerBase)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_28_TriggerActionCollection(object instance, object item)
+        {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerAction>)instance;
             var newItem = (global::Windows.UI.Interactivity.TriggerAction)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_28_BehaviorCollection(object instance, object item)
+        private void VectorAdd_29_AttachableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerAction>)instance;
+            var newItem = (global::Windows.UI.Interactivity.TriggerAction)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_30_FrameworkElementCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.TriggerAction>)instance;
+            var newItem = (global::Windows.UI.Interactivity.TriggerAction)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_34_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.Behavior>)instance;
             var newItem = (global::Windows.UI.Interactivity.Behavior)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_29_LoadableAttachableCollection(object instance, object item)
+        private void VectorAdd_35_LoadableAttachableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.Behavior>)instance;
             var newItem = (global::Windows.UI.Interactivity.Behavior)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_30_AttachableCollection(object instance, object item)
+        private void VectorAdd_36_AttachableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.Behavior>)instance;
             var newItem = (global::Windows.UI.Interactivity.Behavior)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_31_FrameworkElementCollection(object instance, object item)
+        private void VectorAdd_37_FrameworkElementCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Interactivity.Behavior>)instance;
             var newItem = (global::Windows.UI.Interactivity.Behavior)item;
@@ -380,182 +392,214 @@ namespace CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo
             case 6:   //  CrossJournal.UI.UWP.Views.DetailsPageView
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.WindowsUWP.Views.MvxWindowsPage"));
                 userType.Activator = Activate_6_DetailsPageView;
+                userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  CrossJournal.UI.UWP.Views.EditPageView
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.WindowsUWP.Views.MvxWindowsPage"));
-                userType.Activator = Activate_7_EditPageView;
-                userType.SetIsLocalType();
+            case 7:   //  CrossJournal.Core.ViewModels.DetailsPageViewModel
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CrossJournal.Core.ViewModels.BaseViewModel"));
+                userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 8:   //  CrossJournal.UI.UWP.Converters.MultilineToSingleUWP
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.MultilineToSingle>"));
-                userType.Activator = Activate_8_MultilineToSingleUWP;
-                userType.SetIsLocalType();
+            case 8:   //  CrossJournal.Core.ViewModels.BaseViewModel
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Core.ViewModels.MvxViewModel"));
                 xamlType = userType;
                 break;
 
-            case 9:   //  MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.MultilineToSingle>
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter"));
-                userType.Activator = Activate_9_MvxNativeValueConverter;
+            case 9:   //  MvvmCross.Core.ViewModels.MvxViewModel
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Core.ViewModels.MvxNavigatingObject"));
                 xamlType = userType;
                 break;
 
-            case 10:   //  MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter
+            case 10:   //  MvvmCross.Core.ViewModels.MvxNavigatingObject
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Core.ViewModels.MvxNotifyPropertyChanged"));
+                xamlType = userType;
+                break;
+
+            case 11:   //  MvvmCross.Core.ViewModels.MvxNotifyPropertyChanged
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Platform.Core.MvxMainThreadDispatchingObject"));
+                xamlType = userType;
+                break;
+
+            case 12:   //  MvvmCross.Platform.Core.MvxMainThreadDispatchingObject
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 11:   //  Object
+            case 13:   //  Object
                 xamlType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  CrossJournal.UI.UWP.Converters.TimeSpanToHumanStringUWP
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>"));
-                userType.Activator = Activate_12_TimeSpanToHumanStringUWP;
+            case 14:   //  CrossJournal.UI.UWP.Views.EditPageView
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.WindowsUWP.Views.MvxWindowsPage"));
+                userType.Activator = Activate_14_EditPageView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter"));
-                userType.Activator = Activate_13_MvxNativeValueConverter;
+            case 15:   //  CrossJournal.UI.UWP.Converters.MultilineToSingleUWP
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.MultilineToSingle>"));
+                userType.Activator = Activate_15_MultilineToSingleUWP;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  Windows.UI.Interactivity.Interaction
+            case 16:   //  MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.MultilineToSingle>
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter"));
+                userType.Activator = Activate_16_MvxNativeValueConverter;
+                xamlType = userType;
+                break;
+
+            case 17:   //  MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 18:   //  CrossJournal.UI.UWP.Converters.TimeSpanToHumanStringUWP
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>"));
+                userType.Activator = Activate_18_TimeSpanToHumanStringUWP;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter`1<CrossJournal.Core.Converters.TimeSpanToHumanStringConverter>
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.Platform.WindowsCommon.Converters.MvxNativeValueConverter"));
+                userType.Activator = Activate_19_MvxNativeValueConverter;
+                xamlType = userType;
+                break;
+
+            case 20:   //  Windows.UI.Interactivity.Interaction
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Triggers");
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 15:   //  Windows.UI.Interactivity.TriggerCollection
+            case 21:   //  Windows.UI.Interactivity.TriggerCollection
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.TriggerBase>"));
-                userType.CollectionAdd = VectorAdd_15_TriggerCollection;
+                userType.CollectionAdd = VectorAdd_21_TriggerCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.TriggerBase>
+            case 22:   //  Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.TriggerBase>
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerBase>"));
-                userType.CollectionAdd = VectorAdd_16_LoadableAttachableCollection;
+                userType.CollectionAdd = VectorAdd_22_LoadableAttachableCollection;
                 xamlType = userType;
                 break;
 
-            case 17:   //  Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerBase>
+            case 23:   //  Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerBase>
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerBase>"));
-                userType.CollectionAdd = VectorAdd_17_AttachableCollection;
-                xamlType = userType;
-                break;
-
-            case 18:   //  Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerBase>
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                userType.Activator = Activate_18_FrameworkElementCollection;
-                userType.CollectionAdd = VectorAdd_18_FrameworkElementCollection;
-                xamlType = userType;
-                break;
-
-            case 19:   //  Windows.UI.Xaml.FrameworkElement
-                xamlType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 20:   //  Windows.UI.Interactivity.TriggerBase
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.InteractivityBase"));
-                userType.SetContentPropertyName("Windows.UI.Interactivity.TriggerBase.Actions");
-                userType.AddMemberName("Actions");
-                xamlType = userType;
-                break;
-
-            case 21:   //  Windows.UI.Interactivity.InteractivityBase
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                xamlType = userType;
-                break;
-
-            case 22:   //  Windows.UI.Interactivity.TriggerActionCollection
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerAction>"));
-                userType.CollectionAdd = VectorAdd_22_TriggerActionCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 23:   //  Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerAction>
-                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerAction>"));
                 userType.CollectionAdd = VectorAdd_23_AttachableCollection;
                 xamlType = userType;
                 break;
 
-            case 24:   //  Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerAction>
+            case 24:   //  Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerBase>
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
                 userType.Activator = Activate_24_FrameworkElementCollection;
                 userType.CollectionAdd = VectorAdd_24_FrameworkElementCollection;
                 xamlType = userType;
                 break;
 
-            case 25:   //  Windows.UI.Interactivity.TriggerAction
+            case 25:   //  Windows.UI.Xaml.FrameworkElement
+                xamlType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 26:   //  Windows.UI.Interactivity.TriggerBase
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.InteractivityBase"));
+                userType.SetContentPropertyName("Windows.UI.Interactivity.TriggerBase.Actions");
+                userType.AddMemberName("Actions");
+                xamlType = userType;
+                break;
+
+            case 27:   //  Windows.UI.Interactivity.InteractivityBase
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
+                xamlType = userType;
+                break;
+
+            case 28:   //  Windows.UI.Interactivity.TriggerActionCollection
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerAction>"));
+                userType.CollectionAdd = VectorAdd_28_TriggerActionCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 29:   //  Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.TriggerAction>
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerAction>"));
+                userType.CollectionAdd = VectorAdd_29_AttachableCollection;
+                xamlType = userType;
+                break;
+
+            case 30:   //  Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.TriggerAction>
+                userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
+                userType.Activator = Activate_30_FrameworkElementCollection;
+                userType.CollectionAdd = VectorAdd_30_FrameworkElementCollection;
+                xamlType = userType;
+                break;
+
+            case 31:   //  Windows.UI.Interactivity.TriggerAction
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.InteractivityBase"));
                 userType.AddMemberName("IsEnabled");
                 xamlType = userType;
                 break;
 
-            case 26:   //  Boolean
+            case 32:   //  Boolean
                 xamlType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 27:   //  Windows.UI.Xaml.DependencyObject
+            case 33:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  Windows.UI.Interactivity.BehaviorCollection
+            case 34:   //  Windows.UI.Interactivity.BehaviorCollection
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.Behavior>"));
-                userType.CollectionAdd = VectorAdd_28_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_34_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 29:   //  Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.Behavior>
+            case 35:   //  Windows.UI.Interactivity.LoadableAttachableCollection`1<Windows.UI.Interactivity.Behavior>
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.Behavior>"));
-                userType.CollectionAdd = VectorAdd_29_LoadableAttachableCollection;
+                userType.CollectionAdd = VectorAdd_35_LoadableAttachableCollection;
                 xamlType = userType;
                 break;
 
-            case 30:   //  Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.Behavior>
+            case 36:   //  Windows.UI.Interactivity.AttachableCollection`1<Windows.UI.Interactivity.Behavior>
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.Behavior>"));
-                userType.CollectionAdd = VectorAdd_30_AttachableCollection;
+                userType.CollectionAdd = VectorAdd_36_AttachableCollection;
                 xamlType = userType;
                 break;
 
-            case 31:   //  Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.Behavior>
+            case 37:   //  Windows.UI.Interactivity.FrameworkElementCollection`1<Windows.UI.Interactivity.Behavior>
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                userType.Activator = Activate_31_FrameworkElementCollection;
-                userType.CollectionAdd = VectorAdd_31_FrameworkElementCollection;
+                userType.Activator = Activate_37_FrameworkElementCollection;
+                userType.CollectionAdd = VectorAdd_37_FrameworkElementCollection;
                 xamlType = userType;
                 break;
 
-            case 32:   //  Windows.UI.Interactivity.Behavior
+            case 38:   //  Windows.UI.Interactivity.Behavior
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.InteractivityBase"));
                 xamlType = userType;
                 break;
 
-            case 33:   //  Windows.UI.Interactivity.EventTrigger
+            case 39:   //  Windows.UI.Interactivity.EventTrigger
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.EventTriggerBase`1<Object>"));
-                userType.Activator = Activate_33_EventTrigger;
+                userType.Activator = Activate_39_EventTrigger;
                 userType.SetContentPropertyName("Windows.UI.Interactivity.TriggerBase.Actions");
                 userType.AddMemberName("EventName");
                 xamlType = userType;
                 break;
 
-            case 34:   //  Windows.UI.Interactivity.EventTriggerBase`1<Object>
+            case 40:   //  Windows.UI.Interactivity.EventTriggerBase`1<Object>
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.EventTriggerBase"));
                 userType.SetContentPropertyName("Windows.UI.Interactivity.TriggerBase.Actions");
                 userType.AddMemberName("Source");
                 xamlType = userType;
                 break;
 
-            case 35:   //  Windows.UI.Interactivity.EventTriggerBase
+            case 41:   //  Windows.UI.Interactivity.EventTriggerBase
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.TriggerBase"));
                 userType.SetContentPropertyName("Windows.UI.Interactivity.TriggerBase.Actions");
                 userType.AddMemberName("SourceObject");
@@ -563,33 +607,33 @@ namespace CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 36:   //  String
+            case 42:   //  String
                 xamlType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 37:   //  Windows.UI.Interactivity.InvokeCommandAction
+            case 43:   //  Windows.UI.Interactivity.InvokeCommandAction
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.TriggerAction`1<Windows.UI.Xaml.FrameworkElement>"));
-                userType.Activator = Activate_37_InvokeCommandAction;
+                userType.Activator = Activate_43_InvokeCommandAction;
                 userType.AddMemberName("Command");
                 userType.AddMemberName("CommandName");
                 userType.AddMemberName("CommandParameter");
                 xamlType = userType;
                 break;
 
-            case 38:   //  Windows.UI.Interactivity.TriggerAction`1<Windows.UI.Xaml.FrameworkElement>
+            case 44:   //  Windows.UI.Interactivity.TriggerAction`1<Windows.UI.Xaml.FrameworkElement>
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Interactivity.TriggerAction"));
                 xamlType = userType;
                 break;
 
-            case 39:   //  System.Windows.Input.ICommand
+            case 45:   //  System.Windows.Input.ICommand
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 40:   //  CrossJournal.UI.UWP.Views.MainPageView
+            case 46:   //  CrossJournal.UI.UWP.Views.MainPageView
                 userType = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MvvmCross.WindowsUWP.Views.MvxWindowsPage"));
-                userType.Activator = Activate_40_MainPageView;
+                userType.Activator = Activate_46_MainPageView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -613,90 +657,100 @@ namespace CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo
             var that = (global::MvvmCross.WindowsUWP.Views.MvxWindowsPage)instance;
             that.ViewModel = (global::MvvmCross.Core.ViewModels.IMvxViewModel)Value;
         }
-        private object get_2_Interaction_Triggers(object instance)
+        private object get_2_DetailsPageView_ViewModel(object instance)
+        {
+            var that = (global::CrossJournal.UI.UWP.Views.DetailsPageView)instance;
+            return that.ViewModel;
+        }
+        private void set_2_DetailsPageView_ViewModel(object instance, object Value)
+        {
+            var that = (global::CrossJournal.UI.UWP.Views.DetailsPageView)instance;
+            that.ViewModel = (global::CrossJournal.Core.ViewModels.DetailsPageViewModel)Value;
+        }
+        private object get_3_Interaction_Triggers(object instance)
         {
             return global::Windows.UI.Interactivity.Interaction.GetTriggers((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private object get_3_TriggerBase_Actions(object instance)
+        private object get_4_TriggerBase_Actions(object instance)
         {
             var that = (global::Windows.UI.Interactivity.TriggerBase)instance;
             return that.Actions;
         }
-        private object get_4_TriggerAction_IsEnabled(object instance)
+        private object get_5_TriggerAction_IsEnabled(object instance)
         {
             var that = (global::Windows.UI.Interactivity.TriggerAction)instance;
             return that.IsEnabled;
         }
-        private void set_4_TriggerAction_IsEnabled(object instance, object Value)
+        private void set_5_TriggerAction_IsEnabled(object instance, object Value)
         {
             var that = (global::Windows.UI.Interactivity.TriggerAction)instance;
             that.IsEnabled = (global::System.Boolean)Value;
         }
-        private object get_5_Interaction_Behaviors(object instance)
+        private object get_6_Interaction_Behaviors(object instance)
         {
             return global::Windows.UI.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.FrameworkElement)instance);
         }
-        private object get_6_EventTrigger_EventName(object instance)
+        private object get_7_EventTrigger_EventName(object instance)
         {
             var that = (global::Windows.UI.Interactivity.EventTrigger)instance;
             return that.EventName;
         }
-        private void set_6_EventTrigger_EventName(object instance, object Value)
+        private void set_7_EventTrigger_EventName(object instance, object Value)
         {
             var that = (global::Windows.UI.Interactivity.EventTrigger)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_7_EventTriggerBase_Source(object instance)
+        private object get_8_EventTriggerBase_Source(object instance)
         {
             var that = (global::Windows.UI.Interactivity.EventTriggerBase<global::System.Object>)instance;
             return that.Source;
         }
-        private object get_8_EventTriggerBase_SourceObject(object instance)
+        private object get_9_EventTriggerBase_SourceObject(object instance)
         {
             var that = (global::Windows.UI.Interactivity.EventTriggerBase)instance;
             return that.SourceObject;
         }
-        private void set_8_EventTriggerBase_SourceObject(object instance, object Value)
+        private void set_9_EventTriggerBase_SourceObject(object instance, object Value)
         {
             var that = (global::Windows.UI.Interactivity.EventTriggerBase)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_9_EventTriggerBase_SourceName(object instance)
+        private object get_10_EventTriggerBase_SourceName(object instance)
         {
             var that = (global::Windows.UI.Interactivity.EventTriggerBase)instance;
             return that.SourceName;
         }
-        private void set_9_EventTriggerBase_SourceName(object instance, object Value)
+        private void set_10_EventTriggerBase_SourceName(object instance, object Value)
         {
             var that = (global::Windows.UI.Interactivity.EventTriggerBase)instance;
             that.SourceName = (global::System.String)Value;
         }
-        private object get_10_InvokeCommandAction_Command(object instance)
+        private object get_11_InvokeCommandAction_Command(object instance)
         {
             var that = (global::Windows.UI.Interactivity.InvokeCommandAction)instance;
             return that.Command;
         }
-        private void set_10_InvokeCommandAction_Command(object instance, object Value)
+        private void set_11_InvokeCommandAction_Command(object instance, object Value)
         {
             var that = (global::Windows.UI.Interactivity.InvokeCommandAction)instance;
             that.Command = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_11_InvokeCommandAction_CommandName(object instance)
+        private object get_12_InvokeCommandAction_CommandName(object instance)
         {
             var that = (global::Windows.UI.Interactivity.InvokeCommandAction)instance;
             return that.CommandName;
         }
-        private void set_11_InvokeCommandAction_CommandName(object instance, object Value)
+        private void set_12_InvokeCommandAction_CommandName(object instance, object Value)
         {
             var that = (global::Windows.UI.Interactivity.InvokeCommandAction)instance;
             that.CommandName = (global::System.String)Value;
         }
-        private object get_12_InvokeCommandAction_CommandParameter(object instance)
+        private object get_13_InvokeCommandAction_CommandParameter(object instance)
         {
             var that = (global::Windows.UI.Interactivity.InvokeCommandAction)instance;
             return that.CommandParameter;
         }
-        private void set_12_InvokeCommandAction_CommandParameter(object instance, object Value)
+        private void set_13_InvokeCommandAction_CommandParameter(object instance, object Value)
         {
             var that = (global::Windows.UI.Interactivity.InvokeCommandAction)instance;
             that.CommandParameter = (global::System.Object)Value;
@@ -721,82 +775,88 @@ namespace CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo
                 xamlMember.Getter = get_1_MvxWindowsPage_ViewModel;
                 xamlMember.Setter = set_1_MvxWindowsPage_ViewModel;
                 break;
+            case "CrossJournal.UI.UWP.Views.DetailsPageView.ViewModel":
+                userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrossJournal.UI.UWP.Views.DetailsPageView");
+                xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "ViewModel", "CrossJournal.Core.ViewModels.DetailsPageViewModel");
+                xamlMember.Getter = get_2_DetailsPageView_ViewModel;
+                xamlMember.Setter = set_2_DetailsPageView_ViewModel;
+                break;
             case "Windows.UI.Interactivity.Interaction.Triggers":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.Interaction");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "Triggers", "Windows.UI.Interactivity.TriggerCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_2_Interaction_Triggers;
+                xamlMember.Getter = get_3_Interaction_Triggers;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Windows.UI.Interactivity.TriggerBase.Actions":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.TriggerBase");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "Actions", "Windows.UI.Interactivity.TriggerActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_TriggerBase_Actions;
+                xamlMember.Getter = get_4_TriggerBase_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Windows.UI.Interactivity.TriggerAction.IsEnabled":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.TriggerAction");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "IsEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_TriggerAction_IsEnabled;
-                xamlMember.Setter = set_4_TriggerAction_IsEnabled;
+                xamlMember.Getter = get_5_TriggerAction_IsEnabled;
+                xamlMember.Setter = set_5_TriggerAction_IsEnabled;
                 break;
             case "Windows.UI.Interactivity.Interaction.Behaviors":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.Interaction");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "Behaviors", "Windows.UI.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.FrameworkElement");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_5_Interaction_Behaviors;
+                xamlMember.Getter = get_6_Interaction_Behaviors;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Windows.UI.Interactivity.EventTrigger.EventName":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.EventTrigger");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_EventTrigger_EventName;
-                xamlMember.Setter = set_6_EventTrigger_EventName;
+                xamlMember.Getter = get_7_EventTrigger_EventName;
+                xamlMember.Setter = set_7_EventTrigger_EventName;
                 break;
             case "Windows.UI.Interactivity.EventTriggerBase`1<Object>.Source":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.EventTriggerBase`1<Object>");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "Source", "Object");
-                xamlMember.Getter = get_7_EventTriggerBase_Source;
+                xamlMember.Getter = get_8_EventTriggerBase_Source;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Windows.UI.Interactivity.EventTriggerBase.SourceObject":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.EventTriggerBase");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_EventTriggerBase_SourceObject;
-                xamlMember.Setter = set_8_EventTriggerBase_SourceObject;
+                xamlMember.Getter = get_9_EventTriggerBase_SourceObject;
+                xamlMember.Setter = set_9_EventTriggerBase_SourceObject;
                 break;
             case "Windows.UI.Interactivity.EventTriggerBase.SourceName":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.EventTriggerBase");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "SourceName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_EventTriggerBase_SourceName;
-                xamlMember.Setter = set_9_EventTriggerBase_SourceName;
+                xamlMember.Getter = get_10_EventTriggerBase_SourceName;
+                xamlMember.Setter = set_10_EventTriggerBase_SourceName;
                 break;
             case "Windows.UI.Interactivity.InvokeCommandAction.Command":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.InvokeCommandAction");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_InvokeCommandAction_Command;
-                xamlMember.Setter = set_10_InvokeCommandAction_Command;
+                xamlMember.Getter = get_11_InvokeCommandAction_Command;
+                xamlMember.Setter = set_11_InvokeCommandAction_Command;
                 break;
             case "Windows.UI.Interactivity.InvokeCommandAction.CommandName":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.InvokeCommandAction");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "CommandName", "String");
-                xamlMember.Getter = get_11_InvokeCommandAction_CommandName;
-                xamlMember.Setter = set_11_InvokeCommandAction_CommandName;
+                xamlMember.Getter = get_12_InvokeCommandAction_CommandName;
+                xamlMember.Setter = set_12_InvokeCommandAction_CommandName;
                 break;
             case "Windows.UI.Interactivity.InvokeCommandAction.CommandParameter":
                 userType = (global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Interactivity.InvokeCommandAction");
                 xamlMember = new global::CrossJournal.UI.UWP.CrossJournal_UI_UWP_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_InvokeCommandAction_CommandParameter;
-                xamlMember.Setter = set_12_InvokeCommandAction_CommandParameter;
+                xamlMember.Getter = get_13_InvokeCommandAction_CommandParameter;
+                xamlMember.Setter = set_13_InvokeCommandAction_CommandParameter;
                 break;
             }
             return xamlMember;

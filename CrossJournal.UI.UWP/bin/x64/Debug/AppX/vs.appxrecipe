@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Visual Studio\Projects\CrossJournal\CrossJournal.UI.UWP\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-08-30T13:51:12.593</Modified>
+      <Modified>2016-09-05T10:41:13.194</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Visual Studio\Projects\CrossJournal\CrossJournal.UI.UWP\bin\x64\Debug\CrossJournal.UI.UWP.exe">
       <PackagePath>entrypoint\CrossJournal.UI.UWP.exe</PackagePath>
-      <Modified>2016-08-30T13:51:11.336</Modified>
+      <Modified>2016-09-05T10:41:12.221</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mikita_Chuhayevich\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -482,7 +482,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Visual Studio\Projects\CrossJournal\CrossJournal.Core\bin\Debug\CrossJournal.Core.dll">
       <PackagePath>CrossJournal.Core.dll</PackagePath>
-      <Modified>2016-08-30T13:49:39.223</Modified>
+      <Modified>2016-09-05T10:37:07.119</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Visual Studio\Projects\CrossJournal\CrossJournal.UI.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -536,11 +536,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Visual Studio\Projects\CrossJournal\CrossJournal.UI.UWP\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-08-30T13:51:12.007</Modified>
+      <Modified>2016-09-05T10:41:12.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Visual Studio\Projects\CrossJournal\CrossJournal.UI.UWP\bin\x64\Debug\Core\CrossJournal.UI.UWP.exe">
       <PackagePath>CrossJournal.UI.UWP.exe</PackagePath>
-      <Modified>2016-08-30T13:51:12.590</Modified>
+      <Modified>2016-09-05T10:41:13.191</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

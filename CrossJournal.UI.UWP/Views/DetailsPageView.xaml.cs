@@ -24,19 +24,24 @@ namespace CrossJournal.UI.UWP.Views
     /// </summary>
     public sealed partial class DetailsPageView : MvxWindowsPage
     {
-        public event EventHandler<BackRequestedEventArgs> BackRequested;
+        public DetailsPageViewModel ViewModel { get; set; }
 
         public DetailsPageView()
         {
+
+            DataContextChanged += DetailsPageView_DataContextChanged;
             this.InitializeComponent();
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-            BackRequested -= DetailsPageView_BackRequested;
-            BackRequested += DetailsPageView_BackRequested;
+            SystemNavigationManager.GetForCurrentView().BackRequested += (s, e) =>
+            {
+                ViewModel.Back();
+                //viewModel.Back(viewModel);
+            };
         }
 
-        private void DetailsPageView_BackRequested(object sender, BackRequestedEventArgs e)
+        private void DetailsPageView_DataContextChanged(FrameworkElement sender, DataContextChangedEventArgs args)
         {
-
+            ViewModel = DataContext as DetailsPageViewModel;
         }
     }
 }

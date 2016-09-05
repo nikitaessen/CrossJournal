@@ -156,5 +156,10 @@ namespace CrossJournal.Core.ViewModels
         {
             _recordingsManager.AddPhoto();
         }
+
+        public void Back()
+        {
+            Close(this);
+        }
     }
 }
